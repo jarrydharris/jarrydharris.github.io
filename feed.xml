@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hi, I'm Jarryd Harris!</title>
+    <description>I'm a recent Statistics and Computer Science graduate from the University of Sydney.</description>
+    <link>https://jarrydharris.github.io/</link>
+    <atom:link href="https://jarrydharris.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 24 Aug 2021 17:52:40 +1000</pubDate>
+    <lastBuildDate>Tue, 24 Aug 2021 17:52:40 +1000</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>Speech and Language Therapy App</title>
+        <description>
+</description>
+        <pubDate>Mon, 12 Jul 2021 01:56:00 +1000</pubDate>
+        <link>https://jarrydharris.github.io/development/2021/07/12/slp.html</link>
+        <guid isPermaLink="true">https://jarrydharris.github.io/development/2021/07/12/slp.html</guid>
+        
+        <category>R</category>
+        
+        <category>Shiny</category>
+        
+        <category>WebApp</category>
+        
+        <category>DataVis</category>
+        
+        
+        <category>development</category>
+        
+      </item>
+    
+      <item>
+        <title>Martingale Simulator</title>
+        <description>
+</description>
+        <pubDate>Sat, 10 Jul 2021 07:15:00 +1000</pubDate>
+        <link>https://jarrydharris.github.io/development/2021/07/10/martingale.html</link>
+        <guid isPermaLink="true">https://jarrydharris.github.io/development/2021/07/10/martingale.html</guid>
+        
+        <category>Python</category>
+        
+        <category>Dash</category>
+        
+        <category>Plotly</category>
+        
+        <category>Pandas</category>
+        
+        <category>Probability</category>
+        
+        <category>WebApp</category>
+        
+        <category>DataVis</category>
+        
+        
+        <category>development</category>
+        
+      </item>
+    
+      <item>
+        <title>The Monty Hall Problem</title>
+        <description>
+</description>
+        <pubDate>Sun, 02 May 2021 01:56:00 +1000</pubDate>
+        <link>https://jarrydharris.github.io/development/design/2021/05/02/montyhall.html</link>
+        <guid isPermaLink="true">https://jarrydharris.github.io/development/design/2021/05/02/montyhall.html</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>d3.js</category>
+        
+        <category>Story-Telling</category>
+        
+        <category>DataVis</category>
+        
+        <category>Communication</category>
+        
+        
+        <category>development</category>
+        
+        <category>design</category>
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Hi, I'm Jarryd Harris!</title>
+ <link href="https://jarrydharris.github.io/atom.xml" rel="self"/>
+ <link href="https://jarrydharris.github.io/"/>
+ <updated>2021-08-24T17:52:40+10:00</updated>
+ <id>https://jarrydharris.github.io</id>
+ <author>
+   <name>Jarryd Harris</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Speech and Language Therapy App</title>
+   <link href="https://jarrydharris.github.io/development/2021/07/12/slp.html"/>
+   <updated>2021-07-12T01:56:00+10:00</updated>
+   <id>https://jarrydharris.github.io/development/2021/07/12/slp</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Martingale Simulator</title>
+   <link href="https://jarrydharris.github.io/development/2021/07/10/martingale.html"/>
+   <updated>2021-07-10T07:15:00+10:00</updated>
+   <id>https://jarrydharris.github.io/development/2021/07/10/martingale</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>The Monty Hall Problem</title>
+   <link href="https://jarrydharris.github.io/development/design/2021/05/02/montyhall.html"/>
+   <updated>2021-05-02T01:56:00+10:00</updated>
+   <id>https://jarrydharris.github.io/development/design/2021/05/02/montyhall</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+
+</feed>
