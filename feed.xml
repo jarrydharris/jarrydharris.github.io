@@ -5,9 +5,32 @@
     <description>I'm a recent Statistics and Computer Science graduate from the University of Sydney.</description>
     <link>https://jarrydharris.github.io/</link>
     <atom:link href="https://jarrydharris.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Aug 2021 22:15:35 +1000</pubDate>
-    <lastBuildDate>Tue, 24 Aug 2021 22:15:35 +1000</lastBuildDate>
+    <pubDate>Sun, 19 Sep 2021 17:19:38 +1000</pubDate>
+    <lastBuildDate>Sun, 19 Sep 2021 17:19:38 +1000</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>SYNCS Hackathon 2021</title>
+        <description>
+</description>
+        <pubDate>Sun, 12 Sep 2021 01:56:00 +1000</pubDate>
+        <link>https://jarrydharris.github.io/development/2021/09/12/syncs.html</link>
+        <guid isPermaLink="true">https://jarrydharris.github.io/development/2021/09/12/syncs.html</guid>
+        
+        <category>Natural-Language-Processing</category>
+        
+        <category>Speech-to-Text</category>
+        
+        <category>Keyword-Extraction</category>
+        
+        <category>Python</category>
+        
+        <category>Google-Cloud-Platform</category>
+        
+        
+        <category>development</category>
+        
+      </item>
     
       <item>
         <title>Speech and Language Therapy App</title>

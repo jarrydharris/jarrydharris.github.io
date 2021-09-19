@@ -4,13 +4,22 @@
  <title>Hi, I'm Jarryd Harris!</title>
  <link href="https://jarrydharris.github.io/atom.xml" rel="self"/>
  <link href="https://jarrydharris.github.io/"/>
- <updated>2021-08-24T22:15:35+10:00</updated>
+ <updated>2021-09-19T17:19:38+10:00</updated>
  <id>https://jarrydharris.github.io</id>
  <author>
    <name>Jarryd Harris</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>SYNCS Hackathon 2021</title>
+   <link href="https://jarrydharris.github.io/development/2021/09/12/syncs.html"/>
+   <updated>2021-09-12T01:56:00+10:00</updated>
+   <id>https://jarrydharris.github.io/development/2021/09/12/syncs</id>
+   <content type="html">
+</content>
+ </entry>
  
  <entry>
    <title>Speech and Language Therapy App</title>
