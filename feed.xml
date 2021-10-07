@@ -5,9 +5,38 @@
     <description>I'm a recent Statistics and Computer Science graduate from the University of Sydney.</description>
     <link>https://jarrydharris.github.io/</link>
     <atom:link href="https://jarrydharris.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 19 Sep 2021 17:19:38 +1000</pubDate>
-    <lastBuildDate>Sun, 19 Sep 2021 17:19:38 +1000</lastBuildDate>
+    <pubDate>Thu, 07 Oct 2021 19:17:37 +1100</pubDate>
+    <lastBuildDate>Thu, 07 Oct 2021 19:17:37 +1100</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>GCP AutoML NLP Sentiment Analysis</title>
+        <description>
+</description>
+        <pubDate>Wed, 06 Oct 2021 02:56:00 +1100</pubDate>
+        <link>https://jarrydharris.github.io/development/2021/10/06/autoML.html</link>
+        <guid isPermaLink="true">https://jarrydharris.github.io/development/2021/10/06/autoML.html</guid>
+        
+        <category>Natural-Language-Processing</category>
+        
+        <category>Python</category>
+        
+        <category>Google-Cloud-Platform</category>
+        
+        <category>Sentiment-Analysis</category>
+        
+        <category>Tweets</category>
+        
+        <category>AutoML</category>
+        
+        <category>Docker</category>
+        
+        <category>Dash</category>
+        
+        
+        <category>development</category>
+        
+      </item>
     
       <item>
         <title>SYNCS Hackathon 2021</title>
@@ -85,8 +114,8 @@
         <description>
 </description>
         <pubDate>Sun, 02 May 2021 01:56:00 +1000</pubDate>
-        <link>https://jarrydharris.github.io/development/design/2021/05/02/montyhall.html</link>
-        <guid isPermaLink="true">https://jarrydharris.github.io/development/design/2021/05/02/montyhall.html</guid>
+        <link>https://jarrydharris.github.io/development/2021/05/02/montyhall.html</link>
+        <guid isPermaLink="true">https://jarrydharris.github.io/development/2021/05/02/montyhall.html</guid>
         
         <category>JavaScript</category>
         
@@ -100,8 +129,6 @@
         
         
         <category>development</category>
-        
-        <category>design</category>
         
       </item>
     
