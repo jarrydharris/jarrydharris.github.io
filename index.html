@@ -1,485 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <style>
+        :root {
+            --background: #002B36;
+            --primary: #839496;
+            --secondary: #4E9A06;
+            --accent: #3465A4;
+        }
 
-  <!-- Meta -->
-  <meta charset="utf-8">
+        body {
+            background-color: var(--background);
+            color: var(--primary);
+            font-family: monospace, 'Courier New', Courier;
+            font-size: 18px;
+        }
+        h2 {
+            font-size: x-large;
+            font-weight: bold;
+            padding:0;
+            margin: 0;
+        }
+        .terminal{
+            min-height: 400px;
+            max-width: 750px;
+            min-width: 420px;
+            margin: 8px
+        }
 
-  <title>Hi, I'm Jarryd Harris! - Hi, I'm Jarryd Harris!</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta content="yes" name="apple-mobile-web-app-capable">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        .title {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.75rem;
+            flex-wrap: wrap;
+        }
 
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="Hi, I'm Jarryd Harris! - I'm a recent Statistics and Computer Science graduate from the University of Sydney." href="https://jarrydharris.github.io/feed.xml">
-  <link rel="alternate" type="application/atom+xml" title="Hi, I'm Jarryd Harris! - I'm a recent Statistics and Computer Science graduate from the University of Sydney." href="https://jarrydharris.github.io/atom.xml">
+        .title-pre {
+            margin: 0;
+            padding: 0;
+        }
+        .title-pre:nth-of-type(2) {
+            padding-left: 1rem;
+        }
 
-  <!-- Favicons -->
-  <!-- <link rel="icon" href="https://jarrydharris.github.io/img/favicon.png"> -->
-  <!-- <i class="fas fa-angle-right"></i> -->
+        .header {
+            display: flex;
+            align-items: center;
+            color: var(--secondary);
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .colon,
+        .dollar, .nav-input {
+            color: var(--primary)
+        }
 
-  <!-- Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700|Merriweather:400,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
+        .nav-input {
+            padding-left: .5rem;
+            font-weight: normal;
+        }
 
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        .twiddle {
+            color: var(--accent)
+        }
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="/css/animate.min.css">
-  <link rel="stylesheet" href="/css/style.css">
+        .content {
+            overflow-wrap: break-word;
+            box-sizing: border-box; 
+            max-width: 750px; 
+            overflow-x: auto;
+        }
+        .about-footer {
+            font-weight: bold;
+        }
 
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink {
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: var(--primary);
+            }
+        }
+    </style>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
-<body class="">
 
-<div class="main container" id="top">
-
-  
-  <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/"><b>> Jarryd Harris </b><span class="logo_cursor"></span></a> 
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              
-                <li>
-                  <a href="/"><b>Home</b> </a>
-                </li>
-              
-                <li>
-                  <a href="/about"><b>About</b> </a>
-                </li>
-              
-            </ul>
-          </div>
-      </div>
-  </nav>
-  
-
-
-    <div class="container">
-
-  <div class="row">
-
-    <div class="col-md-12">
-
-      <div class="hero-container">
-
-        <div class="hero-content">
-
-          
-          <h1 class="text-center">Hi, I'm Jarryd Harris!</h1>
-          
-
-          
-          <p class="text-center">
-            
-            I'm a recent Statistics and Computer Science graduate from the University of Sydney.
-            
-
-            
-          </p>
-          
-
-          <div class="hero-buttons">
-
-            
-              <a href="mailto:mail@jarrydharris.org" target="_blank" rel="noopener noreferrer"><button class="btn btn-default btn-lg"><i class="fa fa-envelope fa-lg"></i>Email</button></a>
-            
-            
-              <a href="https://github.com/jarrydharris" target="_blank" rel="noopener noreferrer"><button class="btn btn-default btn-lg"><i class="fa fa-github fa-lg"></i>Github</button></a>
-            
-            
-              <a href="https://www.linkedin.com/in/jarryd-harris/" target="_blank" rel="noopener noreferrer"><button class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-lg"></i>Linkedin</button></a>
-            
-
-          </div>
-
+<body>
+    <div class="terminal">
+        <div class="header">PORTFOLIO
+            <span class="colon">:</span>
+            <span class="twiddle">~</span>
+            <span class="dollar">$</span> 
+            <span class="nav-input">  About</span>
         </div>
-
-      </div>
-      <p class="text-center">Scroll down to check out some of my projects!</p>
-      <a class="section-jump text-center" href="#portfolio">
-        <i class="fa fa-angle-down fa-3x"></i>
-      </a>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-    <main id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-
-            
-            <h2 class="section-title text-center"></h2>
-            
-            
-            <p class="section-subtitle text-center"></p>
-            
-
-            <div class="break"></div>
-
-            
-              <div class="wow fadeIn">
-              
-
-              
-                <div class="content-wrap">
-
-  <div class="row">
-
-    <div class="col-xs-12 col-md-6">
-        
-  <img class="img-responsive" src="/img/posts/sent.png" title="GCP AutoML NLP Sentiment Analysis">
-  
-
-    </div>
-
-    <div class="col-xs-12 col-md-6">
-      <div class="content">
-  <h3 class="title">GCP AutoML NLP Sentiment Analysis</h3>
-
-  <p class="excerpt">This showcases Googles AutoML NLP model builder. The model is trained on thousands of airline tweets and hosted using Google Cloud Run.</p>
-
-  
-  <a href="https://github.com/jarrydharris/airline_sentiment" class="project-link" target="_blank" rel="noopener noreferrer"><button class="btn btn-default btn-lg"><i class="fa fa-github fa-lg"></i>Visit Github</button></a>
-  
-
-  
-  <div class="tags">
-    
-    <span>Natural-Language-Processing</span>
-    
-    <span>Python</span>
-    
-    <span>Google-Cloud-Platform</span>
-    
-    <span>Sentiment-Analysis</span>
-    
-    <span>Tweets</span>
-    
-    <span>AutoML</span>
-    
-    <span>Docker</span>
-    
-    <span>Dash</span>
-    
-  </div>
-  
-
-  <!-- 
-  <div class="categories">
-    
-      <span>development</span>
-    
-  </div>
-   -->
-</div>
-
-    </div>
-
-  </div>
-
-</div>
-
-              
-              </div>
-            
-              <div class="wow fadeIn">
-              
-                <div class="content-wrap">
-
-  <div class="row">
-
-    <div class="col-xs-12 col-md-6">
-      <div class="content">
-  <h3 class="title">SYNCS Hackathon 2021</h3>
-
-  <p class="excerpt">SYNCS (Sydney Computing Society) Hackathon 2021 Finalist. My role in the team involved setting up a video encoding, GCP Speech-to-Text and keyword extraction  pipeline. I also pitched the project to the judges.</p>
-
-  
-  <a href="https://devpost.com/software/tba-3mcfsy" class="project-link" target="_blank" rel="noopener noreferrer"><button class="btn btn-default btn-lg"><i class="fa fa-globe fa-lg"></i>Visit Devpost</button></a>
-  
-
-  
-  <div class="tags">
-    
-    <span>Natural-Language-Processing</span>
-    
-    <span>Speech-to-Text</span>
-    
-    <span>Keyword-Extraction</span>
-    
-    <span>Python</span>
-    
-    <span>Google-Cloud-Platform</span>
-    
-  </div>
-  
-
-  <!-- 
-  <div class="categories">
-    
-      <span>development</span>
-    
-  </div>
-   -->
-</div>
-
-    </div>
-
-    <div class="col-xs-12 col-md-6">
-        
-  <img class="img-responsive" src="/img/posts/syncs.jpg" title="SYNCS Hackathon 2021">
-  
-
-    </div>
-
-  </div>
-
-</div>
-
-              
-
-              
-              </div>
-            
-              <div class="wow fadeIn">
-              
-
-              
-                <div class="content-wrap">
-
-  <div class="row">
-
-    <div class="col-xs-12 col-md-6">
-        
-  <img class="img-responsive" src="/img/posts/bar-cropbig.png" title="Speech and Language Therapy App">
-  
-
-    </div>
-
-    <div class="col-xs-12 col-md-6">
-      <div class="content">
-  <h3 class="title">Speech and Language Therapy App</h3>
-
-  <p class="excerpt">A simple web app for tracking and communicating therapy results</p>
-
-  
-  <a href="https://github.com/jarrydharris/therapytracker" class="project-link" target="_blank" rel="noopener noreferrer"><button class="btn btn-default btn-lg"><i class="fa fa-github fa-lg"></i>Visit Project</button></a>
-  
-
-  
-  <div class="tags">
-    
-    <span>R</span>
-    
-    <span>Shiny</span>
-    
-    <span>WebApp</span>
-    
-    <span>DataVis</span>
-    
-  </div>
-  
-
-  <!-- 
-  <div class="categories">
-    
-      <span>development</span>
-    
-  </div>
-   -->
-</div>
-
-    </div>
-
-  </div>
-
-</div>
-
-              
-              </div>
-            
-              <div class="wow fadeIn">
-              
-                <div class="content-wrap">
-
-  <div class="row">
-
-    <div class="col-xs-12 col-md-6">
-      <div class="content">
-  <h3 class="title">Martingale Simulator</h3>
-
-  <p class="excerpt">A simple app to show the results of betting at roulette with a Martingale strategy.</p>
-
-  
-  <a href="https://github.com/jarrydharris/martingale_app" class="project-link" target="_blank" rel="noopener noreferrer"><button class="btn btn-default btn-lg"><i class="fa fa-github fa-lg"></i>Visit Project</button></a>
-  
-
-  
-  <div class="tags">
-    
-    <span>Python</span>
-    
-    <span>Dash</span>
-    
-    <span>Plotly</span>
-    
-    <span>Pandas</span>
-    
-    <span>Probability</span>
-    
-    <span>WebApp</span>
-    
-    <span>DataVis</span>
-    
-  </div>
-  
-
-  <!-- 
-  <div class="categories">
-    
-      <span>development</span>
-    
-  </div>
-   -->
-</div>
-
-    </div>
-
-    <div class="col-xs-12 col-md-6">
-        
-  <img class="img-responsive" src="/img/posts/martingale.png" title="Martingale Simulator">
-  
-
-    </div>
-
-  </div>
-
-</div>
-
-              
-
-              
-              </div>
-            
-              <div class="wow fadeIn">
-              
-
-              
-                <div class="content-wrap">
-
-  <div class="row">
-
-    <div class="col-xs-12 col-md-6">
-        
-  <img class="img-responsive" src="/img/posts/montyss-crop-prev.png" title="The Monty Hall Problem">
-  
-
-    </div>
-
-    <div class="col-xs-12 col-md-6">
-      <div class="content">
-  <h3 class="title">The Monty Hall Problem</h3>
-
-  <p class="excerpt">My first JavaScript project! Probability outreach aimed at young students.</p>
-
-  
-  <a href="https://github.com/jarrydharris/montyhallproblem" class="project-link" target="_blank" rel="noopener noreferrer"><button class="btn btn-default btn-lg"><i class="fa fa-github fa-lg"></i>Visit Project</button></a>
-  
-
-  
-  <div class="tags">
-    
-    <span>JavaScript</span>
-    
-    <span>d3.js</span>
-    
-    <span>Story-Telling</span>
-    
-    <span>DataVis</span>
-    
-    <span>Communication</span>
-    
-  </div>
-  
-
-  <!-- 
-  <div class="categories">
-    
-      <span>development</span>
-    
-  </div>
-   -->
-</div>
-
-    </div>
-
-  </div>
-
-</div>
-
-              
-              </div>
-            
-
-            
-
-
-          </div>
+        <div class="title">
+            <pre class="title-pre">
+     ██╗ █████╗ ██████╗ ██████╗ ██╗   ██╗██████╗ 
+     ██║██╔══██╗██╔══██╗██╔══██╗╚██╗ ██╔╝██╔══██╗
+     ██║███████║██████╔╝██████╔╝ ╚████╔╝ ██║  ██║
+██   ██║██╔══██║██╔══██╗██╔══██╗  ╚██╔╝  ██║  ██║
+╚█████╔╝██║  ██║██║  ██║██║  ██║   ██║   ██████╔╝
+ ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═════╝ 
+            </pre>
+            <pre class="title-pre">
+██╗  ██╗ █████╗ ██████╗ ██████╗ ██╗███████╗
+██║  ██║██╔══██╗██╔══██╗██╔══██╗██║██╔════╝
+███████║███████║██████╔╝██████╔╝██║███████╗
+██╔══██║██╔══██║██╔══██╗██╔══██╗██║╚════██║
+██║  ██║██║  ██║██║  ██║██║  ██║██║███████║
+╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝
+            </pre>
         </div>
-      </div>
-    </main>
+        <div class="output-area">
+            <div class="content">
+<pre><h2>DESCRIPTION</h2>
+    <b>Data Science:</b>
+        Data Acquisition, Exploratory Data Analysis, 
+        Machine Learning, Data Visualization.
+        
+    <b>Frameworks & Tools:</b>
+        Flask, FastAPI, React, Plotly, Pandas, Numpy, Scikit Learn,
+        LLMs, Pydantic.
+        
+    <b>Languages:</b>
+        Python, JavaScript, SQL, Shell, R.
+        
+    <b>CI/CD & MLOps:</b>
+        Github Actions, Azure DevOps.
+        
+    <b>Infrastructure & Databases:</b>
+        Azure, GCP, Terraform, Docker, Postgres, MySql, DuckDB.
+        
+    <b>Software Engineering Practices:</b>
+        Test-Driven Development, Engineering Enablement, 
+        Software Architecture, Agile Delivery, 
+        Lean Product Delivery, Continuous Improvement, 
+        Information Security, Legacy Migration.
 
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-xs-12 col-md-2 col-md-offset-1">
-            <p class="text-muted text-left "><a href="https://jarrydharris.github.io">2021 © Jarryd Harris</a></p>
-          </div>
-
-          <div class="col-xs-12 col-md-6 col-md-offset-2">
-            <a class="section-jump" href="#top">
-              <i class="fa fa-angle-up fa-3x"></i>
-            </a>
-          </div>
+<span class="about-footer">Jarryd Harris About v1.0                                2024-Aug-31</span>
+    </pre>
+            </div>
         </div>
-      </div>
-    </footer>
+    </div>
+ 
+</body>
 
-  </div><!-- .main.container -->
-
-    <!-- JavaScript -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="https://jarrydharris.github.io/js/wow.min.js"></script>
-    <script src="https://jarrydharris.github.io/js/app.js"></script>
-
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', ' ', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-
-    </body>
 </html>
-
