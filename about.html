@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Jarryd Harris - About Me</title>
+  <meta name="description" content="I reluctantly describe myself.">
+  <meta name="author" content="Jarryd Harris">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CDN
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/1f40d.svg">
+
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <!-- Header -->
+    <section class="header">
+      <div class="row">
+        <div class="one-half column" style="margin-top: 25%">
+          <h1>Jarryd Harris</h1>
+        </div>
+    </section>
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+    <div class="navbar-spacer"></div>
+    <!-- Content -->
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <p><b>Bio:</b></p>
+          <p>I began my tech career as a Consultant / Software Engineer Graduate at <a
+              href="https://www.thoughtworks.com/profiles/j/jarryd-harris" target="_blank">Thoughtworks</a>, where I was
+            lucky enough to receive comprehensive training in agile delivery practices, full-stack development, cloud
+            infrastructure and CICD. </p>
+
+          Most of my time at Thoughtworks was spent in the Data & AI team, bringing agile practices to data
+          science and machine learning. </p>
+
+          <p>My time at Thoughtworks cultivated my interests in user centricity, aligning business and tech, effective
+            delivery teams and developer productivity. </p>
+          <p> I currently work for <a href="https://www.waternsw.com.au/water-services/water-quality"
+              target="_blank">WaterNSW</a> as a Data Scientist / Engineer on
+            a cross-disciplinary water quality modelling team. </p>
+
+          <p><b>Where to find me:</b> </p>
+          <p><a href="https://www.linkedin.com/in/jarryd-harris/" target="_blank" style="text-decoration:none"><i
+                class="devicon-linkedin-plain colored"></i></a>
+            <a href="https://github.com/jarrydharris" target="_blank" style="text-decoration:none"><i
+                class="devicon-github-original colored"></i></a>
+
+          </p>
+
+        </div>
+      </div>
+      <hr>
+
+  </div>
+  </section>
+
+  </div>
+  <script>
+    function loadNavbar() {
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+    }
+
+    window.addEventListener('DOMContentLoaded', loadNavbar);
+  </script>
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+
+
+</html>

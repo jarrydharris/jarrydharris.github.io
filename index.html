@@ -2,165 +2,106 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
-    <style>
-        :root {
-            --background: #002B36;
-            --primary: #839496;
-            --secondary: #4E9A06;
-            --accent: #3465A4;
-        }
 
-        body {
-            background-color: var(--background);
-            color: var(--primary);
-            font-family: monospace, 'Courier New', Courier;
-            font-size: 18px;
-        }
-        h2 {
-            font-size: x-large;
-            font-weight: bold;
-            padding:0;
-            margin: 0;
-        }
-        .terminal{
-            min-height: 400px;
-            max-width: 750px;
-            min-width: 420px;
-            margin: 8px
-        }
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Jarryd Harris - Blog</title>
+  <meta name="description" content="A blog, where I blog about things.">
+  <meta name="author" content="Jarryd Harris">
 
-        .title {
-            display: flex;
-            gap: 1rem;
-            font-size: 0.75rem;
-            flex-wrap: wrap;
-        }
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        .title-pre {
-            margin: 0;
-            padding: 0;
-        }
-        .title-pre:nth-of-type(2) {
-            padding-left: 1rem;
-        }
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-        .header {
-            display: flex;
-            align-items: center;
-            color: var(--secondary);
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-        .colon,
-        .dollar, .nav-input {
-            color: var(--primary)
-        }
+  <!-- CDN
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
 
-        .nav-input {
-            padding-left: .5rem;
-            font-weight: normal;
-        }
 
-        .twiddle {
-            color: var(--accent)
-        }
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-        .content {
-            overflow-wrap: break-word;
-            box-sizing: border-box; 
-            max-width: 750px; 
-            overflow-x: auto;
-        }
-        .about-footer {
-            font-weight: bold;
-        }
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/1f40d.svg">
 
-        @keyframes typing {
-            from {
-                width: 0
-            }
-
-            to {
-                width: 100%
-            }
-        }
-
-        @keyframes blink {
-
-            from,
-            to {
-                border-color: transparent;
-            }
-
-            50% {
-                border-color: var(--primary);
-            }
-        }
-    </style>
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 
 <body>
-    <div class="terminal">
-        <div class="header">PORTFOLIO
-            <span class="colon">:</span>
-            <span class="twiddle">~</span>
-            <span class="dollar">$</span> 
-            <span class="nav-input">  About</span>
-        </div>
-        <div class="title">
-            <pre class="title-pre">
-     ██╗ █████╗ ██████╗ ██████╗ ██╗   ██╗██████╗ 
-     ██║██╔══██╗██╔══██╗██╔══██╗╚██╗ ██╔╝██╔══██╗
-     ██║███████║██████╔╝██████╔╝ ╚████╔╝ ██║  ██║
-██   ██║██╔══██║██╔══██╗██╔══██╗  ╚██╔╝  ██║  ██║
-╚█████╔╝██║  ██║██║  ██║██║  ██║   ██║   ██████╔╝
- ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═════╝ 
-            </pre>
-            <pre class="title-pre">
-██╗  ██╗ █████╗ ██████╗ ██████╗ ██╗███████╗
-██║  ██║██╔══██╗██╔══██╗██╔══██╗██║██╔════╝
-███████║███████║██████╔╝██████╔╝██║███████╗
-██╔══██║██╔══██║██╔══██╗██╔══██╗██║╚════██║
-██║  ██║██║  ██║██║  ██║██║  ██║██║███████║
-╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝
-            </pre>
-        </div>
-        <div class="output-area">
-            <div class="content">
-<pre><h2>DESCRIPTION</h2>
-    <b>Data Science:</b>
-        Data Acquisition, Exploratory Data Analysis, 
-        Machine Learning, Data Visualization.
-        
-    <b>Frameworks & Tools:</b>
-        Flask, FastAPI, React, Plotly, Pandas, Numpy, Scikit Learn,
-        LLMs, Pydantic.
-        
-    <b>Languages:</b>
-        Python, JavaScript, SQL, Shell, R.
-        
-    <b>CI/CD & MLOps:</b>
-        Github Actions, Azure DevOps.
-        
-    <b>Infrastructure & Databases:</b>
-        Azure, GCP, Terraform, Docker, Postgres, MySql, DuckDB.
-        
-    <b>Software Engineering Practices:</b>
-        Test-Driven Development, Engineering Enablement, 
-        Software Architecture, Agile Delivery, 
-        Lean Product Delivery, Continuous Improvement, 
-        Information Security, Legacy Migration.
 
-<span class="about-footer">Jarryd Harris About v1.0                                2024-Aug-31</span>
-    </pre>
-            </div>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <!-- Header -->
+    <section class="header">
+      <div class="row">
+        <div class="one-half column" style="margin-top: 25%">
+          <h1>Jarryd Harris</h1>
         </div>
-    </div>
- 
+    </section>
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+    <div class="navbar-spacer"></div>
+    <!-- Content -->
+    <section class="content">
+
+      <div id="posts" class="container">
+        <!-- Post 000 -->
+        <zero-md id="post-000" class="post" src="posts/000_parse_dont_validate.md" name="Key Takeaways: 'Parse, don't validate'">
+          <template>
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/skeleton.css">
+            <link rel="stylesheet" href="css/custom.css">
+            <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+            <link rel="stylesheet" type='text/css'
+              href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+            <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+          </template>
+        </zero-md>
+
+      </div>
+      <hr>
+
+  </div>
+  </section>
+
+  </div>
+
+  <script>
+    function loadNavbar() {
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+    }
+
+    window.addEventListener('DOMContentLoaded', loadNavbar);
+  </script>
+
+
+
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+
+
 
 </html>
