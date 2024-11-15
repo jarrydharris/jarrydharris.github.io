@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Jarryd Harris - Recommended Resources</title>
+  <meta name="description" content="Resources I recommend for software and data folk.">
+  <meta name="author" content="Jarryd Harris">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/1f40d.svg">
+
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <!-- Header -->
+    <section class="header">
+      <div class="row">
+        <div class="one-half column" style="margin-top: 25%">
+          <h1>Jarryd Harris</h1>
+        </div>
+    </section>
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+    <div class="navbar-spacer"></div>
+    <!-- Content -->
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div id="recommendation-002" class="recommendation">
+
+            <h4 class="recommendation__header">Effective Machine Learning Teams</h4>
+            <div class="recommendation__content">
+              <img class="recommendation__img" src="/images/effective_machine_learning_teams.png">
+              <div class="recommendation__info">
+                <div class="recommendation__text recommendation__text--what"><b>What is it?</b>
+                </div>
+                <div class="recommendation__text recommendation__text--who">c</div>
+                <div class="recommendation__text recommendation__text--why"><b>Why do I recommend it?</b>
+                  This book is focused on machine learning teams and covers everything from
+                  product thinking, delivery, engineering techniques, team dynamics and organizational culture. The
+                  authors leverage their consulting experience to illustrate potential pitfalls in ML delivery
+                  projects, while
+                  also gathering
+                  some of the best ideas, methodologies, and resources from the tech industry to demonstrate how to
+                  improve
+                  outcomes.</div>
+                <div class="recommendation__text recommendation__text--where">e</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Recommendation 001 -->
+      <div class="row">
+        <div id="recommendation-001" class="recommendation">
+          <div class="recommendation-info">
+            <h5>Effective Machine Learning Teams</h5>
+            <img src="/images/the_prag_prog_cover.png" alt="Book Cover" class="book-cover" height="300px">
+            <div>
+              <p><b>What is it?</b> </p>
+              <p>A book</p>
+            </div>
+            <div>
+              <p> <b>Who do I recommend it for?</b></p>
+              <p>Anyone who wants to learn more about delivery in the context of data
+                science and machine learning.
+              <p>
+            </div>
+            <div>
+              <b>Why do I recommend it?</b>
+              <p>This book is focused on machine learning teams and covers everything from
+                product thinking, delivery, engineering techniques, team dynamics and organizational culture.
+              </p>
+              <p>
+
+              </p>
+              <p>
+                It's no secret that the data science industry has a high rate of project failure and staff burnout.
+                This
+                book one of the most practical collections of
+                ideas for making positive change in a workplace that I've found.
+              </p>
+              <div>
+                <b>Where can you find it?</b>
+                <a href="https://www.oreilly.com/library/view/effective-machine-learning/9781098144623/"
+                  target="_blank">https://www.oreilly.com/</a>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+        </div>
+        <!-- Recommendation 000 -->
+        <div class="row">
+          <div id="recommendation-000" class="recommendation">
+            <img src="/images/the_prag_prog_cover.png" alt="Book Cover" class="book-cover" height="300px">
+
+            <h5>The Pragmatic Programmer</h5>
+            <div>
+              <b>What is it?</b> A book
+            </div>
+            <div>
+              <b>Who do I recommend it for?</b> Anyone who writes code at work, earlier in your career the better.
+            </div>
+            <div>
+              <b>Why do I recommend it?</b> This is all the stuff you would hope to hear from a good senior engineer
+              or mentor. I can't summarize it better than the authors themselves:
+              <quote>Written as a series of self-contained sections and filled with classic and fresh anecdotes,
+                thoughtful examples, and interesting analogies, The Pragmatic Programmer illustrates the best
+                approaches and major pitfalls of many different aspects of software development. Whether you're a new
+                coder, an experienced programmer, or a manager responsible for software projects, use these lessons
+                daily, and you'll quickly see improvements in personal productivity, accuracy, and job satisfaction.
+                You'll learn skills and develop habits and attitudes that form the foundation for long-term success in
+                your career.</quote>
+            </div>
+            <div>
+              <b>Where can you find it?</b>
+              <a href="https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/"
+                target="_blank">https://pragprog.com</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <hr>
+
+  </div>
+  </section>
+
+  </div>
+  <script>
+    function loadNavbar() {
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+    }
+
+    window.addEventListener('DOMContentLoaded', loadNavbar);
+  </script>
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+
+
+</html>
