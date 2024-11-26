@@ -1,27 +1,34 @@
 ## Key Takeaways: "Parse, don't validate".
-###### 09-11-2024
----
+
+`09-11-2024` `v1.1.0`
+
+<hr>
 
 #### Resource:
 
 Article: [*Parse, Don't validate*](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/)   
-Author: *Alexis King*                                                                                  
+Author: *Alexis King*   
 
-#### Key Takeaways:
+#### Context
 
-1. Data validation code in one part of a system often needs to be duplicated in downstream components.
-2. Packaging valid data with the guarantee of its validity removes the need for duplicating validation code.
-3. The author uses "Type Driven Design" to communicate validity to the rest of the system. They suggest the following:
-   - Avoid the use of `None`.
-   - Define types that communicate a valid or invalid state.
-   - Leverage functional programming techniques to avoid creating a new set of problems.
+Data validation is necessary, but the code often needs to be duplicated in downstream parts of a system. This can be a source of bugs or maintenance costs.
 
-#### Notes:
+If we leverage ideas from functional programming and "type driven design" to parse data, rather than just validate it, we can avoid these issues.
 
-##### Communicating with types
+#### Key Takeaways
 
-- Compilers, type checkers and modern IDEs provide instant feedback.
-- The `None` type can encourage undesirable code.
+
+1. Avoid partially defined functions (i.e. don't use `None`).
+2. Define types that communicate a valid or invalid state.
+3. Leverage functional programming techniques to manage unexpected data.
+
+#### Notes
+
+<details>
+
+<summary> Communicating intent with type driven design </summary>
+
+If we code meaning into our types, we have "self documenting" code that can prevent errors and bugs. Compilers, type checkers and modern IDEs provide instant, visual feedback when we write code that doesn't pass the static type check.
 
 In the following painfully contrived example, we only find out at runtime if we performed an operation that made sense:
 
@@ -111,10 +118,14 @@ By using types to drive the behavior of our code we achieve the following:
 - Get instant feedback on programming errors
 - Self document the code and make it more robust to future changes 
 
+</details>
 
-##### Ok, we got rid of `None`, but how do we handle runtime errors?
 
-If we try to naively remove `None` from the codebase we would just end up with errors.
+<details>
+
+<summary> Ok, we got rid of <code>None</code>, but how do we handle unexpected data? </summary>
+
+If we try to naively remove `None` from the codebase we would just end up with runtime errors.
 
 The trick is to wrap our data in a container that represents the "result" of an operation. To do this we use a concept from functional programming called the "monad". I'm not going to go deep into this, but I've provided a few resources for learning [here](#endofunctors-monoids-huh). In a nutshell, monads are like boxes that hold our data, rather than operating directly on our data, we provide the transformation to the box, which in the event of an illegal operation, it will hold on to the error.
 
@@ -195,10 +206,17 @@ The `parse_record` function is the first time we get to see these ideas in actio
 # stdout:
 Valid:
 
-        ParseFootBallResult(FootBall(id='ball_000', circumference_mm=697.0, weight_grams=420.0, pressure_psi=12.0))
-        ParseFootBallResult(FootBall(id='ball_001', circumference_mm=698.5, weight_grams=420.0, pressure_psi=13.0))
-        ParseFootBallResult(FootBall(id='ball_002', circumference_mm=711.2, weight_grams=430.0, pressure_psi=12.5))
-        ParseFootBallResult(FootBall(id='ball_003', circumference_mm=673.1, weight_grams=390.0, pressure_psi=10.0))
+ParseFootBallResult(
+    FootBall(
+        id='ball_000', 
+        circumference_mm=697.0, 
+        weight_grams=420.0, 
+        pressure_psi=12.0
+    )
+)
+ParseFootBallResult(FootBall(id='ball_001', circumference_mm=698.5, weight_grams=420.0, pressure_psi=13.0))
+ParseFootBallResult(FootBall(id='ball_002', circumference_mm=711.2, weight_grams=430.0, pressure_psi=12.5))
+ParseFootBallResult(FootBall(id='ball_003', circumference_mm=673.1, weight_grams=390.0, pressure_psi=10.0))
 
 Invalid:
 
@@ -233,14 +251,23 @@ Invalid:
         ParseFootBallResult(TypeError("FootBall.__init__() missing 1 required positional argument: 'circumference_mm'"))
 ```
 
+</details>
 
-##### Endofunctors? Monoids? Huh?
+<details>
+
+<summary> Endofunctors? Monoids? Huh? </summary>
 
 I went down a bit of a functional programming rabbit hole after reading the original article, here are some of the easier to follow resources:
 
 🐇 [Python Functors and Monads: A Practical Guide](https://arjancodes.com/blog/python-functors-and-monads/)  
 🕳️ [Functors and Monads For People Who Have Read Too Many "Tutorials"](https://www.jerf.org/iri/post/2958/)
 
-##### Should I throw out validation code and only ever write type driven parsers?
+</details>
+
+<details>
+
+<summary> Should I throw out validation code and only ever write type driven parsers? </summary>
 
 Probably not, the author points out there is a trade-off. Validation code is simpler, quicker and easier. Rigorous type driven design is probably only going to be worth it when you are really optimizing for a robust system.
+
+</details>

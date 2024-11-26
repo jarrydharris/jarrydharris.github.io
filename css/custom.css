@@ -1,3 +1,9 @@
+/* markdown */
+summary {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
 /* typography */
 
 /* h6 {
@@ -96,37 +102,37 @@ i {
 }
 
 .recommendation {
-  margin-top: 1rem;
-  background-color: #22222222;
-  border: 1px solid #000;
+  margin-bottom: 1rem;
+  /* background-color: #22222222; */
+  /* border: 1px solid #000; */
 }
 
 .recommendation__header {
-  border-bottom: 1px solid #000;
-  padding: .5rem;
+  padding-top: 1rem;
+  /* border-bottom: 1px solid #000; */
 }
 
 .recommendation__content {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   display: flex;
+  margin: 0 0 1rem;
 }
 
 .recommendation__info {
-  border: 1px solid #000;
-
+  /* border: 1px solid #000; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y:scroll;
+  /* overflow-y:scroll; */
 }
 
 .recommendation__img {
-  /* width: 33.3%; */
+  min-width: 250px;
   max-width: 33.33%;
-  object-fit:scale-down;
+  object-fit: scale-down;
   margin-right: 1rem;
   border-radius: 5px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 
 }
 
