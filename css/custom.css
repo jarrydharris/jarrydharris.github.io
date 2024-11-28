@@ -4,13 +4,6 @@ summary {
   margin-bottom: 1rem;
 }
 
-/* typography */
-
-/* h6 {
-    font-weight: 600;
-    font-size: large;
-} */
-
 /* Navigation */
 .navbar {
   display: block;
@@ -18,7 +11,6 @@ summary {
   height: 6.5rem;
   background: #fff;
   z-index: 99;
-  /* border-top: 1px solid #eee; */
   border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
@@ -82,7 +74,11 @@ summary {
 
 }
 
+.error {
+  text-decoration: wavy red underline;
+}
 
+/* Quotes */
 quote {
   display: block;
   background-color: #E1E1E155;
@@ -93,37 +89,25 @@ quote {
 
 }
 
-.error {
-  text-decoration: wavy red underline;
-}
-
-i {
-  font-size: 3rem;
-}
+/* Resource recommendations */
 
 .recommendation {
   margin-bottom: 1rem;
-  /* background-color: #22222222; */
-  /* border: 1px solid #000; */
 }
 
 .recommendation__header {
   padding-top: 1rem;
-  /* border-bottom: 1px solid #000; */
 }
 
 .recommendation__content {
-  /* border: 1px solid #000; */
   display: flex;
   margin: 0 0 1rem;
 }
 
 .recommendation__info {
-  /* border: 1px solid #000; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* overflow-y:scroll; */
 }
 
 .recommendation__img {
@@ -132,7 +116,11 @@ i {
   object-fit: scale-down;
   margin-right: 1rem;
   border-radius: 5px;
-  /* border: 1px solid #000; */
 
 }
 
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+}

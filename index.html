@@ -60,7 +60,8 @@
 
       <div id="posts" class="container">
         <!-- Post 000 -->
-        <zero-md id="post-000" class="post" src="posts/000_parse_dont_validate.md" name="Key Takeaways: 'Parse, don't validate'">
+        <zero-md id="post-000" class="post" src="posts/000_parse_dont_validate.md"
+          name="Key Takeaways: 'Parse, don't validate'">
           <template>
             <link rel="stylesheet" href="css/normalize.css">
             <link rel="stylesheet" href="css/skeleton.css">
@@ -82,26 +83,30 @@
 
   </div>
 
-  <script>
-    function loadNavbar() {
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar-placeholder').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading navbar:', error));
-    }
-
-    window.addEventListener('DOMContentLoaded', loadNavbar);
-  </script>
 
 
 
+  <footer>
+    <p>&copy; <span id="year"></span> Jarryd Harris. All rights reserved.</p>
+  </footer>
 
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+<script>
+  function loadNavbar() {
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+  }
 
-
+  window.addEventListener('DOMContentLoaded', loadNavbar);
+</script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </html>

@@ -90,22 +90,27 @@
   </section>
 
   </div>
-  <script>
-    function loadNavbar() {
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar-placeholder').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading navbar:', error));
-    }
-
-    window.addEventListener('DOMContentLoaded', loadNavbar);
-  </script>
+  <footer>
+    <p>&copy; <span id="year"></span> Jarryd Harris. All rights reserved.</p>
+  </footer>
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+<script>
+  function loadNavbar() {
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+  }
 
+  window.addEventListener('DOMContentLoaded', loadNavbar);
+</script>
 
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </html>
