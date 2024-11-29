@@ -45,7 +45,6 @@
     </section>
     <!-- Navigation -->
     <div id="navbar-placeholder"></div>
-    <div class="navbar-spacer"></div>
     <!-- Content -->
     <section class="content">
       <div class="container">
@@ -110,18 +109,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 
-<script>
-  function loadNavbar() {
-    fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar-placeholder').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading navbar:', error));
-  }
-
-  window.addEventListener('DOMContentLoaded', loadNavbar);
-</script>
+<script src="components/navbar.js"></script>
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
