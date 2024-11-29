@@ -1,13 +1,13 @@
 ## Key Takeaways: "Parse, don't validate".
 
-`09-11-2024` `v1.1.0`
+`09-11-2024` `v1.1.0` 
 
 <hr>
 
-#### Resource:
 
-Article: [*Parse, Don't validate*](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/)   
-Author: *Alexis King*   
+#### Overview
+
+I try to make things that work when users expect them to, which means handling unexpected data. Duplicate validation code always seemed an inevitable cost, until I stumbled across <a href="https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/" target="_blank">Parse, Don't validate</a> by Alexis King. I figured I'd write down my key takeaways and provide detailed examples using python for anyone who isn't a fan of haskell.
 
 #### Context
 
