@@ -1,6 +1,6 @@
 ## Key Takeaways: "Parse, don't validate".
 
-`09-11-2024` `v1.1.0` 
+`09-11-2024` `v1.1.1` 
 
 <hr>
 
@@ -203,8 +203,7 @@ parsed_footballs = [
 The `parse_record` function is the first time we get to see these ideas in action. When we parse `records` we get the following:
 
 ```python
-# stdout:
-Valid:
+Valid footballs:
 
 ParseFootBallResult(
     FootBall(
@@ -214,14 +213,43 @@ ParseFootBallResult(
         pressure_psi=12.0
     )
 )
-ParseFootBallResult(FootBall(id='ball_001', circumference_mm=698.5, weight_grams=420.0, pressure_psi=13.0))
-ParseFootBallResult(FootBall(id='ball_002', circumference_mm=711.2, weight_grams=430.0, pressure_psi=12.5))
-ParseFootBallResult(FootBall(id='ball_003', circumference_mm=673.1, weight_grams=390.0, pressure_psi=10.0))
+ParseFootBallResult(
+    FootBall(
+        id='ball_001',
+        circumference_mm=698.5,
+        weight_grams=420.0,
+        pressure_psi=13.0
+    )
+)
+ParseFootBallResult(
+    FootBall(
+        id='ball_002', 
+        circumference_mm=711.2, 
+        weight_grams=430.0, 
+        pressure_psi=12.5
+    )
+)
+ParseFootBallResult(
+    FootBall(
+        id='ball_003', 
+        circumference_mm=673.1, 
+        weight_grams=390.0, 
+        pressure_psi=10.0
+    )
+)
 
-Invalid:
+Invalid football:
 
-        ParseFootBallResult(InvalidFootballError("FootBall fields contain invalid data: 'pressure_psi: None'"))
-        ParseFootBallResult(TypeError("FootBall.__init__() missing 1 required positional argument: 'circumference_mm'"))
+ParseFootBallResult(
+    InvalidFootballError(
+        "FootBall fields contain invalid data: 'pressure_psi: None'"
+    )
+)
+ParseFootBallResult(
+    TypeError(
+        "FootBall.__init__() missing 1 required positional argument: 'circumference_mm'"
+    )
+)
 ```
 
 This is handy, because we have all the valid data and our descriptive errors in the same place. The real magic of course is we can continue to apply functions to the values without fear of performing illegal operations that might interrupt the system.
@@ -238,17 +266,43 @@ The resulting output shows the remaining valid `FootBall` and also preserves the
 ```python
 # stdout:
 
-Valid:
+Valid football:
 
-        ParseFootBallResult(GameReadyFootBall(id='ball_001', circumference_mm=698.5, weight_grams=420.0, pressure_psi=13.0))
+ParseFootBallResult(
+    GameReadyFootBall(
+        id='ball_001', 
+        circumference_mm=698.5, 
+        weight_grams=420.0, 
+        pressure_psi=13.0
+    ))
 
-Invalid:
+Invalid football:
 
-        ParseFootBallResult(InvalidFootballError("Football is not ready for a game: {'circumference_mm': False, 'weight_grams': True, 'pressure_psi': False}"))
-        ParseFootBallResult(InvalidFootballError("Football is not ready for a game: {'circumference_mm': False, 'weight_grams': False, 'pressure_psi': False}"))
-        ParseFootBallResult(InvalidFootballError("Football is not ready for a game: {'circumference_mm': False, 'weight_grams': False, 'pressure_psi': False}"))
-        ParseFootBallResult(InvalidFootballError("FootBall fields contain invalid data: 'pressure_psi: None'"))
-        ParseFootBallResult(TypeError("FootBall.__init__() missing 1 required positional argument: 'circumference_mm'"))
+ParseFootBallResult(
+    InvalidFootballError(
+        "Football is not ready for a game: {'circumference_mm': False, 'weight_grams': True, 'pressure_psi': False}"
+    )
+)
+ParseFootBallResult(
+    InvalidFootballError(
+        "Football is not ready for a game: {'circumference_mm': False, 'weight_grams': False, 'pressure_psi': False}"
+    )
+)
+ParseFootBallResult(
+    InvalidFootballError(
+        "Football is not ready for a game: {'circumference_mm': False, 'weight_grams': False, 'pressure_psi': False}"
+    )
+)
+ParseFootBallResult(
+    InvalidFootballError(
+        "FootBall fields contain invalid data: 'pressure_psi: None'"
+    )
+)
+ParseFootBallResult(
+    TypeError(
+        "FootBall.__init__() missing 1 required positional argument: 'circumference_mm'"
+    )
+)
 ```
 
 </details>
