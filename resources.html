@@ -48,53 +48,7 @@
     <!-- Content -->
     <section class="content">
       <div class="container">
-        <div class="row">
-          <!-- Recommendation -->
-          <div id="recommendation-001" class="recommendation">
-
-            <h4 class="recommendation__header">Effective Machine Learning Teams</h4>
-            <div class="recommendation__content">
-              <img class="recommendation__img" src="/images/effective_machine_learning_teams.png"
-                alt="Effective Machine Learning Teams Book Cover">
-              <div class="recommendation__info">
-                <div class="recommendation__text recommendation__text--what"><b>Type: </b>Book</div>
-                <div class="recommendation__text recommendation__text--who"><b>Audience: </b>Anyone on a data science /
-                  ML team</div>
-                <div class="recommendation__text recommendation__text--why"><b>Why: </b>Excellent resource to understand
-                  common pitfalls in ML Delivery. Covers product thinking, delivery, engineering techniques, team
-                  dynamics, and culture. </div>
-                <div class="recommendation__text recommendation__text--where"><b>Link: </b><a
-                    href="https://www.oreilly.com/library/view/effective-machine-learning/9781098144623/"
-                    target="_blank">https://www.oreilly.com/</a></div>
-              </div>
-            </div>
-          </div>
-        <hr>
-        </div>
-        <div class="row">
-          <!-- Recommendation -->
-          <div id="recommendation-000" class="recommendation">
-
-            <h4 class="recommendation__header">The Pragmatic Programmer</h4>
-            <div class="recommendation__content">
-              <img class="recommendation__img" src="/images/the_prag_prog_cover.png"
-                alt="The Pragmatic Programmer Book Cover">
-              <div class="recommendation__info">
-                <div class="recommendation__text recommendation__text--what"><b>Type: </b>Book</div>
-                <div class="recommendation__text recommendation__text--who"><b>Audience: </b>Anyone whose job includes
-                  writing code.</div>
-                <div class="recommendation__text recommendation__text--why"><b>Why: </b>I can't imagine a better book to
-                  cover "How to be good at your job". Intended for software engineers but excellent read for data
-                  scientists as well.</div>
-                <div class="recommendation__text recommendation__text--where"><b>Link: </b> <a
-                    href="https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/"
-                    target="_blank">https://pragprog.com</a></div>
-              </div>
-            </div>
-          </div>
-          <hr>
-        </div>
-
+        <div class="recommendations-container"></div>
       </div>
   </div>
   </section>
@@ -110,6 +64,7 @@
 </body>
 
 <script src="components/navbar.js"></script>
+<script src="components/recommendation.js"></script>
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
