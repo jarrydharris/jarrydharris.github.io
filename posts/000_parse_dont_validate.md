@@ -66,40 +66,14 @@ def check_pressure(ball: FootBall) -> float: ...
 
 And compare how this looks with and without a modern IDE.
 
-<table width="100%">
-<tr>
-<td></td>
-<td>Valid type</td>
-<td>Invalid type</td>
-</tr>
-<tr>
-<td>Without IDE type checking</td>
-<td>
+Without type checking:
 
 ```python
 check_pressure(foot_ball) 
 ```
 
-</td>
-<td>
+With type checking:
 
-```python
-check_pressure(golf_ball) 
-```
-
-</td>
-</tr>
-<tr>
-<td>With IDE type checking</td>
-
-<td>
-
-```python
-check_pressure(foot_ball) 
-```
-
-</td>
-<td>
 <span class="error">
 
 ```python
@@ -107,9 +81,6 @@ check_pressure(golf_ball)
 ```
 
 </span>
-</td>
-</tr>
-</table>
 
 This kind of visual feedback is an excellent way to catch bugs before they happen.
 
