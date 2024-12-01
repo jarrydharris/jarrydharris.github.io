@@ -1,17 +1,15 @@
 /* markdown */
 summary {
-  font-weight: bold;
+  font-weight: 300;
   margin-bottom: 1rem;
   cursor: pointer;
 
 }
 summary::before {
-  content: "▶";
-  font-variant: normal;
+  content: "\25B6"; /* Unicode for ▶ */
 }
 details[open] summary::before {
-  content: "▼";
-  font-variant: normal;
+  content: "\25BC"; /* Unicode for ▼ */
 }
 
 details[open] summary {
@@ -77,7 +75,9 @@ details[open] summary {
   position: relative;
 }
 
-
+code {
+  cursor: pointer;
+}
 
 .language-label {
   position: absolute;
@@ -143,4 +143,25 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 1rem;
+}
+
+/* Modal */
+
+dialog {
+  padding: 0;
+  width: 90vw;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+
+dialog>pre {
+  padding: 0;
+  margin: 0;
+}
+
+dialog>pre>code {
+  cursor: text;
+  padding: 0;
+  margin: 1rem;
+  font-size: 1.8rem;
 }

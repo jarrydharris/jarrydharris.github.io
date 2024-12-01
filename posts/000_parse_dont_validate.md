@@ -43,7 +43,8 @@ def check_pressure(ball: Ball) -> None | float: ...
 Now we need to handle the case when something like this happens:
 
 ```Python
-check_pressure(Ball("golf")) # It doesn't make much sense to check the pressure of a golf ball
+check_pressure(Ball("golf")) 
+# It doesn't make much sense to check the pressure of a golf ball
 ```
 
 In practice, this can create a lot of duplicate code. Any downstream function that relies on the `check_pressure` validation step will now also need to include validation code to handle any `None` cases. If downstream functions don't handle `None`, purely out of "trust" that a previous step already performed that check, we risk future changes to the system causing unexpected bugs.
@@ -122,8 +123,8 @@ class ParseFootBallResult(Generic[T]):
 
 The class can be boiled down to two concepts. 
 
-    1. The "result" which is either the value of a computation, or an error state.
-    2. The ability to control when a function can be applied to the value.
+1. The "result" which is either the value of a computation, or an error state.
+2. The ability to control when a function can be applied to the value.
 
 To see how it works we can imagine our user wants to get information about the footballs available to see which one meets their competition standards. They query the available balls and get a response like this:
 
