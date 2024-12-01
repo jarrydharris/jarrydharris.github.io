@@ -1,17 +1,15 @@
 /* markdown */
 summary {
-  font-weight: bold;
+  font-weight: 300;
   margin-bottom: 1rem;
   cursor: pointer;
 
 }
 summary::before {
-  content: "▶";
-  font-variant: normal;
+  content: "\25B6"; /* Unicode for ▶ */
 }
 details[open] summary::before {
-  content: "▼";
-  font-variant: normal;
+  content: "\25BC";
 }
 
 details[open] summary {
