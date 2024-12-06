@@ -1,8 +1,27 @@
 ## Key Takeaways: "Parse, don't validate".
 
-`09-11-2024` `v1.1.1` 
-
-<hr>
+<div class="tag__container">
+    <div class="tag__icon">
+        <img class="hero-icon" src="../images/icons/calendar.svg">: 
+    </div>
+    <div class="tag__tags">
+        <div class="tag">09-11-2024</div> 
+    </div>
+    <div class="tag__icon">
+        <img class="hero-icon" src="../images/icons/beaker.svg">:
+    </div>
+    <div class="tag__tags">
+        <div class="tag">v1.1.1 </div>
+    </div>
+</div>
+<div class="tag__container container u-pull-left">
+    <div class="tag__icon">
+        <img class="hero-icon" src="../images/icons/tag.svg">:
+    </div>
+    <div class="tag__tags">
+        <div class="tag">type driven design</div> <div class="tag">python</div> <div class="tag">clean code</div>
+    </div>
+</div>
 
 
 #### Overview
@@ -93,7 +112,7 @@ By using types to drive the behavior of our code we achieve the following:
 </details>
 
 
-<details>
+<details> 
 
 <summary> Ok, we got rid of <code>None</code>, but how do we handle unexpected data? </summary>
 
