@@ -180,7 +180,8 @@ dialog>pre>code {
 }
 
 .tag__container {
-  display:flex;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 1rem;
 }
@@ -196,13 +197,6 @@ dialog>pre>code {
   margin: 0;
 }
 
-.tag__tags {
-  margin-right: 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
 .tag {
   font-size: 1rem;
   background-color: #eee;
@@ -210,4 +204,11 @@ dialog>pre>code {
   border:#E1E1E1 solid 1px;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.post__property {
+  display: flex;
+  align-items: center;
 }
