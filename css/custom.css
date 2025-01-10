@@ -181,7 +181,7 @@ dialog>pre>code {
 
 .tag__container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
   align-items: center;
   margin-bottom: 1rem;
 }
