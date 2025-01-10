@@ -1,32 +1,19 @@
 ## Key Takeaways: "Parse, don't validate".
 
-<div class="tag__container">
-    <div class="tag__icon">
-        <img class="hero-icon" src="../images/icons/calendar.svg">: 
-    </div>
-    <div class="tag__tags">
+<div class="tag__container .u-full-width">
+        <div class="post__property"><img class="hero-icon" src="../images/icons/calendar.svg">:</div>
         <div class="tag">09-11-2024</div> 
-    </div>
-    <div class="tag__icon">
-        <img class="hero-icon" src="../images/icons/beaker.svg">:
-    </div>
-    <div class="tag__tags">
-        <div class="tag">v1.1.1 </div>
-    </div>
+        <div class="post__property"><img class="hero-icon" src="../images/icons/beaker.svg">:</div>
+        <div class="tag">v1.1.2 </div>
+        <div class="post__property"><img class="hero-icon" src="../images/icons/tag.svg">:</div>
+        <div class="tag">type driven design</div> 
+        <div class="tag">python</div> 
+        <div class="tag">clean code</div>
 </div>
-<div class="tag__container container u-pull-left">
-    <div class="tag__icon">
-        <img class="hero-icon" src="../images/icons/tag.svg">:
-    </div>
-    <div class="tag__tags">
-        <div class="tag">type driven design</div> <div class="tag">python</div> <div class="tag">clean code</div>
-    </div>
-</div>
-
 
 #### Overview
 
-I try to make things that work when users expect them to, which means handling unexpected data. Duplicate validation code always seemed an inevitable cost, until I stumbled across <a href="https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/" target="_blank">Parse, Don't validate</a> by Alexis King. I figured I'd write down my key takeaways and provide detailed examples using python for anyone who isn't a fan of haskell.
+Users will always find new and creative ways to put unexpected data into your system. Validating data before processing it is necessary to create robust systems. Duplicating validation code across a system always seemed an inevitable cost when trying to achieve robustness, until I stumbled across <a href="https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/" target="_blank">Parse, Don't validate</a> by Alexis King. I figured I'd write down my key takeaways and provide detailed examples using python for anyone who isn't a fan of haskell.
 
 #### Context
 
